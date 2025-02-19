@@ -3,177 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Equipment Store - Home</title>
+    <title>CricketGear Pro - Premium Cricket Equipment</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Cricket Store">
-                </a>
+                <a href="index.html">CricketGear<span>Pro</span></a>
             </div>
-            <nav class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="shop.php">Shop</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="login.php">Login</a>
-                <a href="cart.php" class="cart-icon">
-                    <i class="fas fa-shopping-cart"></i>
+            <div class="nav-links">
+                <a href="index.html" class="active">
+                    <i class="fa-duotone fa-home"></i> Home
+                </a>
+                <a href="shop.html">
+                    <i class="fa-duotone fa-store"></i> Shop
+                </a>
+                <a href="auth.html">
+                    <i class="fa-duotone fa-user"></i> Login
+                </a>
+                <a href="#" class="cart-icon">
+                    <i class="fa-duotone fa-shopping-cart"></i>
                     <span class="cart-count">0</span>
                 </a>
-            </nav>
+            </div>
+            <div class="mobile-menu">
+                <i class="fa-duotone fa-bars"></i>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero" style="background-image: url('img/hero/cricket-stadium.jpg')">
+        <section class="hero" style="background-image: url('images/fld.jpg');">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>Premium Cricket Equipment</h1>
-                <p class="hero-subtitle">Gear Up Like a Pro</p>
+                <p>Gear up like professionals with our high-quality cricket equipment</p>
                 <div class="hero-buttons">
-                    <a href="shop.php" class="cta-button">
-                        Shop Now 
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#categories" class="secondary-button">
-                        Explore Categories
-                        <i class="fas fa-chevron-down"></i>
-                    </a>
+                    <a href="shop.html" class="primary-btn">Shop Now</a>
+                    <a href="#categories" class="secondary-btn">View Categories</a>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Categories -->
+        <!-- Categories Section -->
         <section id="categories" class="categories">
-            <div class="section-header">
-                <h2>Shop By Category</h2>
-                <p>Find the perfect cricket equipment for your game</p>
-            </div>
+            <h2 class="section-title">Shop By Category</h2>
             <div class="category-grid">
-                <a href="shop.php?category=bats" class="category-card">
-                    <div class="category-image">
-                        <img src="img/bats/bat1.jpg" alt="Cricket Bats">
-                        <div class="category-overlay"></div>
-                    </div>
-                    <div class="category-info">
+                <div class="category-card">
+                    <img src="images/cricket bat.jpg" alt="Cricket Bats">
+                    <div class="category-content">
                         <h3>Cricket Bats</h3>
-                        <p>Premium Willow Bats</p>
-                        <span class="explore-btn">Explore →</span>
+                        <p>Professional Grade Bats</p>
+                        <a href="shop.html?category=bats" class="category-btn">View All</a>
                     </div>
-                </a>
-                <a href="shop.php?category=balls" class="category-card">
-                    <div class="category-image">
-                        <img src="img/balls/ball1.jpg" alt="Cricket Balls">
-                        <div class="category-overlay"></div>
-                    </div>
-                    <div class="category-info">
+                </div>
+                <div class="category-card">
+                    <img src="images/ball.jpg" alt="Cricket Balls">
+                    <div class="category-content">
                         <h3>Cricket Balls</h3>
                         <p>Match & Practice Balls</p>
-                        <span class="explore-btn">Explore →</span>
+                        <a href="shop.html?category=balls" class="category-btn">View All</a>
                     </div>
-                </a>
-                <a href="shop.php?category=jerseys" class="category-card">
-                    <div class="category-image">
-                        <img src="img/jerseys/jersey1.jpg" alt="Cricket Jerseys">
-                        <div class="category-overlay"></div>
+                </div>
+                <div class="category-card">
+                    <img src="images/gloves.jpg" alt="Cricket Gloves">
+                    <div class="category-content">
+                        <h3>Cricket Gloves</h3>
+                        <p>Professional Gloves</p>
+                        <a href="shop.html?category=gloves" class="category-btn">View All</a>
                     </div>
-                    <div class="category-info">
+                </div>
+                <div class="category-card">
+                    <img src="images/gercey.jpg" alt="Cricket Jerseys">
+                    <div class="category-content">
                         <h3>Cricket Jerseys</h3>
-                        <p>Official Team Jerseys</p>
-                        <span class="explore-btn">Explore →</span>
+                        <p>Team & Club Jerseys</p>
+                        <a href="shop.html?category=jerseys" class="category-btn">View All</a>
                     </div>
-                </a>
-                <a href="shop.php?category=shoes" class="category-card">
-                    <div class="category-image">
-                        <img src="img/shoes/shoe1.jpg" alt="Cricket Shoes">
-                        <div class="category-overlay"></div>
-                    </div>
-                    <div class="category-info">
-                        <h3>Cricket Shoes</h3>
-                        <p>Professional Spikes</p>
-                        <span class="explore-btn">Explore →</span>
-                    </div>
-                </a>
+                </div>
             </div>
         </section>
 
         <!-- Featured Products -->
         <section class="featured-products">
-            <div class="section-header">
-                <h2>Featured Products</h2>
-                <p>Our most popular cricket equipment</p>
-            </div>
-            <div class="product-slider">
-                <!-- Product cards will be dynamically loaded from products.php -->
-            </div>
-        </section>
-
-        <!-- Special Offers -->
-        <section class="special-offers">
-            <div class="offer-grid">
-                <div class="offer-card">
-                    <img src="img/offers/bat-offer.jpg" alt="Special Offer">
-                    <div class="offer-content">
-                        <h3>Special Discount</h3>
-                        <p>Get 20% off on selected bats</p>
-                        <a href="shop.php?category=bats" class="offer-btn">Shop Now</a>
+            <h2 class="section-title">Featured Products</h2>
+            <div class="featured-grid">
+                <!-- Bat Cards -->
+                <div class="featured-card" onclick="window.location.href='shop.html#bats'">
+                    <div class="featured-image">
+                        <img src="images/cricket bat.jpg" alt="Premium Cricket Bat">
+                        <span class="featured-badge">Best Seller</span>
+                    </div>
+                    <div class="featured-info">
+                        <h3>MRF Genius Pro</h3>
+                        <div class="featured-meta">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <div class="price">₹24,999</div>
+                        </div>
                     </div>
                 </div>
-                <div class="offer-card">
-                    <img src="img/offers/jersey-offer.jpg" alt="New Collection">
-                    <div class="offer-content">
-                        <h3>New Collection</h3>
-                        <p>World Cup 2024 Jerseys</p>
-                        <a href="shop.php?category=jerseys" class="offer-btn">View Collection</a>
+
+                <!-- Ball Card -->
+                <div class="featured-card" onclick="window.location.href='shop.html#balls'">
+                    <div class="featured-image">
+                        <img src="images/ball.jpg" alt="Cricket Ball">
+                        <span class="featured-badge">New</span>
+                    </div>
+                    <div class="featured-info">
+                        <h3>Kookaburra Test Match</h3>
+                        <div class="featured-meta">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <div class="price">₹1,999</div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Jersey Cards -->
+                <div class="featured-card" onclick="window.location.href='shop.html#jerseys'">
+                    <div class="featured-image">
+                        <img src="images/gercey.jpg" alt="Cricket Jersey">
+                        <span class="featured-badge">Trending</span>
+                    </div>
+                    <div class="featured-info">
+                        <h3>Team India Jersey 2024</h3>
+                        <div class="featured-meta">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                            <div class="price">₹4,999</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more featured cards similarly -->
+                <!-- ... Add 7 more cards with different products ... -->
             </div>
         </section>
 
-        <!-- Brands Section -->
-        <section class="brands">
-            <div class="section-header">
-                <h2>Our Trusted Brands</h2>
-                <p>We partner with the best in cricket</p>
-            </div>
-            <div class="brand-slider">
-                <div class="brand-logo">
-                    <img src="img/brands/mrf.jpg" alt="MRF">
+        <!-- Why Choose Us -->
+        <section class="features">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-duotone fa-truck-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Free shipping on orders above ₹1000</p>
                 </div>
-                <div class="brand-logo">
-                    <img src="img/brands/kookaburra.jpg" alt="Kookaburra">
+                <div class="feature-card">
+                    <i class="fa-duotone fa-shield-check"></i>
+                    <h3>Secure Payment</h3>
+                    <p>100% secure checkout</p>
                 </div>
-                <div class="brand-logo">
-                    <img src="img/brands/sg.jpg" alt="SG">
+                <div class="feature-card">
+                    <i class="fa-duotone fa-arrow-rotate-left"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy</p>
                 </div>
-                <div class="brand-logo">
-                    <img src="img/brands/nike.jpg" alt="Nike">
+                <div class="feature-card">
+                    <i class="fa-duotone fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer support</p>
                 </div>
-                <div class="brand-logo">
-                    <img src="img/brands/adidas.jpg" alt="Adidas">
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="newsletter">
-            <div class="newsletter-content">
-                <h2>Join Our Newsletter</h2>
-                <p>Subscribe to get special offers and updates</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email address">
-                    <button type="submit" class="cta-button">
-                        Subscribe
-                        <i class="fas fa-paper-plane"></i>
-                    </button>
-                </form>
             </div>
         </section>
     </main>
@@ -187,28 +188,19 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="shop.php">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="auth.html">Login</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Contact Us</h3>
-                <p>Email: info@cricketstore.com</p>
+                <p>Email: info@cricketgearpro.com</p>
                 <p>Phone: +91 1234567890</p>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Cricket Equipment Store. All rights reserved.</p>
+            <p>&copy; 2024 CricketGear Pro. All rights reserved.</p>
         </div>
     </footer>
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup - CricketGear Pro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Same navbar as index.html -->
+
+    <main class="auth-page">
+        <div class="auth-container">
+            <div class="auth-tabs">
+                <button class="tab-btn active" data-tab="login">
+                    <i class="fa-duotone fa-sign-in"></i> Login
+                </button>
+                <button class="tab-btn" data-tab="signup">
+                    <i class="fa-duotone fa-user-plus"></i> Sign Up
+                </button>
+            </div>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form active" action="php/login.php" method="POST">
+                <div class="form-group">
+                    <label for="loginEmail">
+                        <i class="fa-duotone fa-envelope"></i> Email
+                    </label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">
+                        <i class="fa-duotone fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="loginPassword" name="password" required>
+                </div>
+                <div class="form-group remember-me">
+                    <label>
+                        <input type="checkbox" name="remember"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="auth-btn">
+                    <i class="fa-duotone fa-sign-in"></i> Login
+                </button>
+                <p class="form-footer">
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </p>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signupForm" class="auth-form" action="php/signup.php" method="POST">
+                <div class="form-group">
+                    <label for="signupName">
+                        <i class="fa-duotone fa-user"></i> Full Name
+                    </label>
+                    <input type="text" id="signupName" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">
+                        <i class="fa-duotone fa-envelope"></i> Email
+                    </label>
+                    <input type="email" id="signupEmail" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPhone">
+                        <i class="fa-duotone fa-phone"></i> Phone Number
+                    </label>
+                    <input type="tel" id="signupPhone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">
+                        <i class="fa-duotone fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="signupPassword" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirmPassword">
+                        <i class="fa-duotone fa-lock"></i> Confirm Password
+                    </label>
+                    <input type="password" id="signupConfirmPassword" name="confirm_password" required>
+                </div>
+                <div class="form-group terms">
+                    <label>
+                        <input type="checkbox" name="terms" required>
+                        I agree to the Terms & Conditions
+                    </label>
+                </div>
+                <button type="submit" class="auth-btn">
+                    <i class="fa-duotone fa-user-plus"></i> Create Account
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Same footer as index.html -->
+
+    <script src="js/auth.js"></script>
+</body>
+</html> 
